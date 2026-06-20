@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Loja de livros afiliados com recomendações para estudo e desenvolvimento profissional." />
+  <title>Estante Premium | Livros Afiliados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+  </style>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="#topo" aria-label="Ir para o início">
+        <span class="brand__logo" aria-hidden="true">E</span>
+        <span class="brand__text">
+          <strong>Estante Premium</strong>
+          <small>Livros afiliados selecionados</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+        <a href="#hero">Início</a>
+        <a href="#livros">Livros</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="header-cta" href="#livros">Explorar catálogo</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="section-kicker">Curadoria para estudo e carreira</span>
+          <h1>Descubra livros que elevam sua rotina de aprendizado.</h1>
+          <p>Uma vitrine premium com recomendações para programação, desenvolvimento web, dados, algoritmos e tecnologia aplicada ao seu crescimento profissional.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#livros">Ver Livros</a>
+            <a class="button button--ghost" href="#sobre">Saiba mais</a>
+          </div>
+          <ul class="hero__highlights" aria-label="Destaques do catálogo">
+            <li>Seleção organizada por categoria</li>
+            <li>Pesquisa instantânea em tempo real</li>
+            <li>Layout responsivo para todos os dispositivos</li>
+          </ul>
+        </div>
+
+        <div class="hero__panel reveal">
+          <div class="hero-card hero-card--accent">
+            <span>Catálogo em destaque</span>
+            <strong>8 livros para estudo e evolução profissional</strong>
+            <p>Edite facilmente as capas, títulos e links de afiliado nos pontos marcados no código.</p>
+          </div>
+          <div class="hero-card">
+            <span>Busca inteligente</span>
+            <strong>Filtre por nome, autor ou categoria</strong>
+          </div>
+          <div class="hero-card">
+            <span>Visual premium</span>
+            <strong>Sombra suave, espaçamento amplo e animações leves</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="livros">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Livros</span>
+          <h2>Escolha sua próxima leitura</h2>
+          <p>Use a barra de pesquisa e os filtros para localizar rapidamente livros por assunto.</p>
+        </div>
+
+        <div class="catalog-tools reveal">
+          <div class="search-box">
+            <label class="sr-only" for="bookSearch">Pesquisar livros</label>
+            <input id="bookSearch" type="search" placeholder="Pesquise por título, autor ou categoria..." autocomplete="off" />
+          </div>
+
+          <div class="category-filters" aria-label="Filtrar por categoria">
+            <button class="category-filter is-active" type="button" data-category="all">Todos</button>
+            <button class="category-filter" type="button" data-category="programacao">Programação</button>
+            <button class="category-filter" type="button" data-category="desenvolvimento-web">Desenvolvimento Web</button>
+            <button class="category-filter" type="button" data-category="banco-de-dados">Banco de Dados</button>
+            <button class="category-filter" type="button" data-category="inteligencia-artificial">Inteligência Artificial</button>
+            <button class="category-filter" type="button" data-category="algoritmos">Algoritmos</button>
+            <button class="category-filter" type="button" data-category="devops">DevOps</button>
+          </div>
+        </div>
+
+        <div class="books-grid" id="booksGrid">
+          <article class="book-card reveal" data-category="programacao" data-title="clean code" data-author="robert c. martin" data-description="Referência essencial para escrever código legível, sustentável e profissional.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_677433-MLU72592365557_102023-F.webp" alt="Capa do livro Clean Code" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Programação</span>
+              <h3>Código Limpo</h3>
+              <p class="book-card__author">Robert C. Martin</p>
+              <p class="book-card__description">Referência essencial para escrever código legível, sustentável e profissional.</p>
+              <a class="book-card__button" href="https://meli.la/2h8U9Wz" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card reveal" data-category="desenvolvimento-web" data-title="you don't know js" data-author="kyle simpson" data-description="Uma série indispensável para dominar o comportamento real do JavaScript moderno.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_888678-MLB49962049529_052022-F.webp" alt="Capa do livro You Don't Know JS" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Logica de Programação</span>
+              <h3>Entendendo Algoritmos</h3>
+              <p class="book-card__author">Aditya Bhargava</p>
+              <p class="book-card__description">Uma introdução visual e didática aos algoritmos, ideal para aprender lógica de programação e resolução de problemas de forma prática.</p>
+              <a class="book-card__button" href="https://meli.la/2wACBfb" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card reveal" data-category="banco-de-dados" data-title="designing data-intensive applications" data-author="martin kleppmann" data-description="Leitura avançada sobre dados, escalabilidade, consistência e arquiteturas distribuídas.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_814600-MLA80735317154_112024-F.webp" alt="Capa do livro Designing Data-Intensive Applications" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Programação</span>
+              <h3>Meu Primeiro Livro de Programação</h3>
+              <p class="book-card__author">Burlamaqui, Nestor</p>
+              <p class="book-card__description">Um guia introdutório e acessível para quem está dando os primeiros passos no mundo da programação.</p>
+              <a class="book-card__button" href="https://meli.la/1BymSc4" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card reveal" data-category="inteligencia-artificial" data-title="hands-on machine learning" data-author="aurélien géron" data-description="Guia prático para aprender machine learning com uma abordagem aplicada e atual.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_902277-MLA82483270893_022025-F.webp" alt="Capa do livro Hands-On Machine Learning" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Programação</span>
+              <h3>Introdução À Programação Com Python: Algoritmos E Lógica De Programação Para Iniciantes</h3>
+              <p class="book-card__author">Nilo Ney Coutinho Menezes</p>
+              <p class="book-card__description">Aprenda Python, lógica de programação e algoritmos do zero com uma abordagem prática e ideal para iniciantes.</p>
+              <a class="book-card__button" href="https://meli.la/1qZMeUt" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card reveal" data-category="algoritmos" data-title="grokking algorithms" data-author="aditya bhargava" data-description="Explicações visuais e diretas para quem quer fortalecer a base em algoritmos.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_698607-MLU77230501688_072024-F.webp" alt="Capa do livro Grokking Algorithms" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Ciência de Dados</span>
+              <h3>Data Science Do Zero: noções Fundamentais com Python - Editora Alta Books</h3>
+              <p class="book-card__author">Grus, Joel</p>
+              <p class="book-card__description">Descubra os fundamentos da Ciência de Dados com Python por meio de exemplos práticos e explicações claras.</p>
+              <a class="book-card__button" href="https://meli.la/1sq5kAg" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card reveal" data-category="devops" data-title="the phoenix project" data-author="gene kim, kevin behr e george spafford" data-description="Uma história que ensina princípios de DevOps, fluxo de valor e melhoria contínua.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_915934-MLU79000628070_092024-F.webp" alt="Capa do livro The Phoenix Project" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Programação</span>
+              <h3>Use A Cabeça Java 3ª Edição - Guia Do Aprendiz Para Programação No Mundo Real</h3>
+              <p class="book-card__author">Kathy Sierra, Bert Bates e Trisha Gee</p>
+              <p class="book-card__description">Aprenda Java de forma prática e interativa com exemplos do mundo real e uma metodologia fácil de acompanhar.</p>
+              <a class="book-card__button" href="https://meli.la/1YhJAtd" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card reveal" data-category="programacao" data-title="refactoring" data-author="martin fowler" data-description="Livro clássico para melhorar a qualidade interna de software sem alterar seu comportamento.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_800646-MLA110043162982_042026-F.webp" alt="Capa do livro Refactoring" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Programação</span>
+              <h3>Lógica De Programação: A Construção De Algoritmos Exclusivo</h3>
+              <p class="book-card__author">Forbellone, André Luiz Villar</p>
+              <p class="book-card__description">Desenvolva o raciocínio lógico e aprenda a criar algoritmos de forma clara, prática e eficiente.</p>
+              <a class="book-card__button" href="https://meli.la/2PFLpR7" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+
+          <article class="book-card reveal" data-category="desenvolvimento-web" data-title="css secrets" data-author="lea verou" data-description="Técnicas elegantes e modernas para criar interfaces visuais mais refinadas com CSS.">
+            <div class="book-card__cover">
+              <img src="https://http2.mlstatic.com/D_NQ_NP_2X_672433-MLU72972322145_112023-F.webp" alt="Capa do livro CSS Secrets" />
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__tag">Ciência de Dados</span>
+              <h3>Estatística Prática Para Cientistas de Dados</h3>
+              <p class="book-card__author">Andrew Bruce, Peter Bruce</p>
+              <p class="book-card__description">Aprenda os principais conceitos de estatística aplicados à Ciência de Dados de forma prática e objetiva</p>
+              <a class="book-card__button" href=" https://meli.la/12zAAe3" target="_blank" rel="noopener noreferrer">
+                Comprar Agora
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <strong>Nenhum livro encontrado.</strong>
+          <p>Experimente outro termo de pesquisa ou remova o filtro de categoria.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container about__grid reveal">
+        <div>
+          <span class="section-kicker">Sobre</span>
+          <h2>Uma vitrine pensada para recomendações de leitura</h2>
+        </div>
+        <p>Este site foi criado para divulgar livros recomendados para estudo, aperfeiçoamento técnico e desenvolvimento profissional. A estrutura foi desenhada para que você substitua as capas e insira seus links de afiliado com rapidez, mantendo uma apresentação elegante e confiável.</p>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo">
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <footer class="site-footer" id="contato">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="#topo">
+          <span class="brand__logo" aria-hidden="true">E</span>
+          <span class="brand__text">
+            <strong>Estante Premium</strong>
+            <small>Livros afiliados selecionados</small>
+          </span>
+        </a>
+        <p>© 2026 Estante Premium. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Início</a>
+        <a href="#livros">Livros</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#topo">Topo</a>
+      </div>
+
+      <div class="social-links" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram fictício" title="Instagram fictício">
+          <span class="social-icon">◎</span>
+          Instagram
+        </a>
+        <a href="#" aria-label="LinkedIn fictício" title="LinkedIn fictício">
+          <span class="social-icon">in</span>
+          LinkedIn
+        </a>
+        <a href="#" aria-label="YouTube fictício" title="YouTube fictício">
+          <span class="social-icon">▶</span>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
